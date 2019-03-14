@@ -11,7 +11,7 @@
 		"connections" : {
 			"database" : "mysql",
       "mysql": {
-				"host": "172.40.0.2",
+				"host": "hash_db",
 				"port": "3306",
 				"database": "hash",
 				"user": "hash",
