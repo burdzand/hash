@@ -40,8 +40,8 @@
     "pk": 1,
     "fields": {
       "first_name": "Hash ",
-      "last_name": "User 14",
-      "date_of_birth": "2019-03-14"
+      "last_name": "User 13",
+      "date_of_birth": "2019-03-13"
     }
   },
   {
@@ -49,8 +49,8 @@
     "pk": 2,
     "fields": {
       "first_name": "User",
-      "last_name": "Hash 13",
-      "date_of_birth": "2019-03-13"
+      "last_name": "Hash 14",
+      "date_of_birth": "2019-03-14"
     }
   },
   {
@@ -78,6 +78,33 @@
       "first_name": "Hash",
       "last_name": "User 17",
       "date_of_birth": "2019-03-17"
+    }
+  },
+  {
+    "model": "app.user",
+    "pk": 6,
+    "fields": {
+      "first_name": "Hash",
+      "last_name": "User 18",
+      "date_of_birth": "2019-03-18"
+    }
+  },
+  {
+    "model": "app.user",
+    "pk": 7,
+    "fields": {
+      "first_name": "Hash",
+      "last_name": "User 19",
+      "date_of_birth": "2019-03-19"
+    }
+  },
+  {
+    "model": "app.user",
+    "pk": 8,
+    "fields": {
+      "first_name": "Hash",
+      "last_name": "User 20",
+      "date_of_birth": "2019-03-20"
     }
   }
 ]
