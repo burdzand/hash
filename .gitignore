@@ -1,0 +1,7 @@
+debug
+vendor/*/
+.ssh
+debug
+vendor/*/
+.vscode
+*.pyc

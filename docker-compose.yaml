@@ -1,0 +1,50 @@
+version: "3.3"
+
+services:
+  db:
+    image: mysql:5.7
+    container_name: hash_db
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: hash-pass-word-root
+      MYSQL_DATABASE: hash
+      MYSQL_USER: hash
+      MYSQL_PASSWORD: hash-pass-word
+    networks:
+      - hash
+
+  client:
+    build: ./client
+    container_name: client
+    working_dir: /opt/client
+    ports:
+      - 8000:8000
+    depends_on:
+      - db
+    environment:
+      DATABASE_HOST: hash_db
+      DATABASE_NAME: hash
+      DATABASE_USER: hash
+      DATABASE_PASSWORD: hash-pass-word
+      GRPC_URL: "server_hash:3000"
+    networks:
+      - hash
+    command: sh -c './wait-for hash_db:3306 -- python manage.py migrate app && python manage.py loaddata initialdata.json && python manage.py runserver 0.0.0.0:8000';
+
+  server:
+    build: ./server
+    container_name: server_hash
+    ports:
+      - 3000:3000
+    depends_on:
+      - db
+    networks:
+      - hash
+    command: sh -c './wait-for hash_db:3306 -- ./main -c=./default.json';
+
+networks:
+  hash:
+    ipam:
+      config:
+        - subnet: 172.40.0.0/16

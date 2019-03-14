@@ -1,0 +1,83 @@
+[
+  {
+    "model": "app.product",
+    "pk": 1,
+    "fields": {
+      "price_in_cents": 21999,
+      "title": "Fritadeira Elétrica Sem Óleo",
+      "description": "Fritadeira Elétrica Sem Óleo - Air Fryer Britânia Pro Saúde 3,2 L Preta com Timer 127V"
+    }
+  },
+  {
+    "model": "app.product",
+    "pk": 2,
+    "fields": {
+      "price_in_cents": 18990,
+      "title": "Conjunto de Panelas Antiaderente",
+      "description": "Conjunto de Panelas Antiaderente 2019"
+    }
+  },
+  {
+    "model": "app.product",
+    "pk": 3,
+    "fields": {
+      "price_in_cents": 500000,
+      "title": "Iphone 8",
+      "description": "Iphone 8"
+    }
+  },
+  {
+    "model": "app.product",
+    "pk": 4,
+    "fields": {
+      "price_in_cents": 40000,
+      "title": "Moto G",
+      "description": "Moto G 7"
+    }
+  },
+  {
+    "model": "app.user",
+    "pk": 1,
+    "fields": {
+      "first_name": "Hash ",
+      "last_name": "User 14",
+      "date_of_birth": "2019-03-14"
+    }
+  },
+  {
+    "model": "app.user",
+    "pk": 2,
+    "fields": {
+      "first_name": "User",
+      "last_name": "Hash 13",
+      "date_of_birth": "2019-03-13"
+    }
+  },
+  {
+    "model": "app.user",
+    "pk": 3,
+    "fields": {
+      "first_name": "Hash",
+      "last_name": "User 15",
+      "date_of_birth": "2019-03-15"
+    }
+  },
+  {
+    "model": "app.user",
+    "pk": 4,
+    "fields": {
+      "first_name": "Hash",
+      "last_name": "User 16",
+      "date_of_birth": "2019-03-16"
+    }
+  },
+  {
+    "model": "app.user",
+    "pk": 5,
+    "fields": {
+      "first_name": "Hash",
+      "last_name": "User 17",
+      "date_of_birth": "2019-03-17"
+    }
+  }
+]

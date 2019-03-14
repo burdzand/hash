@@ -1,0 +1,12 @@
+github.com/creamdog/gonfig
+github.com/sirupsen/logrus
+github.com/jinzhu/gorm
+github.com/lib/pq
+github.com/jinzhu/gorm/dialects/postgres
+github.com/jinzhu/gorm/dialects/mysql
+github.com/jinzhu/gorm/dialects/sqlite
+github.com/mattn/go-sqlite3
+github.com/rs/xid
+google.golang.org/grpc
+github.com/golang/protobuf/protoc-gen-go
+github.com/go-sql-driver/mysql
