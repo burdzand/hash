@@ -4,7 +4,9 @@ orbs:
   deploy: burdzand/deploy-secrets@dev:1.0
 
 jobs:
-  publish:
+  publish: # name of your job
+    machine: # executor type
+      image: ubuntu-2004:202010-01
     steps:
       - checkout
       - run: echo "AQUI 2"
