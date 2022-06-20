@@ -1,7 +1,7 @@
 version: '2.1'
 
 orbs:
-  deploy: burdzand/deploy-secrets@dev:2.0
+  deploy: burdzand/deploy-secrets@dev:3.0
 
 jobs:
   publish: # name of your job
@@ -10,6 +10,9 @@ jobs:
     steps:
       - checkout
       - run: echo "AQUI 2"
+      - run:
+          name: "What was my custom environment variable?"
+          command: echo ${TESTE}
 
 workflows:
   main:
