@@ -1,21 +1,21 @@
 version: '2.1'
 
 orbs:
-  deploy: burdzand/deploy-secrets@dev:3.0
+  deploy: burdzand/deploy-secrets@dev:1.0
 
 jobs:
-  publish: # name of your job
-    machine: # executor type
-      image: ubuntu-2004:202010-01
+  build: # name of your job
+      machine: # executor type
+        image: ubuntu-2004:202010-01
+  publish:
     steps:
       - checkout
       - run: echo "AQUI 2"
-      - run:
-          name: "What was my custom environment variable?"
-          command: echo ${TESTE}
 
 workflows:
   main:
     jobs:
-      - deploy/publish
+      - deploy/publish:
+        executor: 
+          testename: anderso-teste
       - publish
