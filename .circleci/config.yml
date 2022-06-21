@@ -1,7 +1,7 @@
 version: '2.1'
 
 orbs:
-  deploy: burdzand/deploy-secrets@dev:1.0
+  deploy: burdzand/deploy-secrets@dev:4.0
 
 jobs:
   machine: # executor type
