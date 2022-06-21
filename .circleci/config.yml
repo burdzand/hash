@@ -15,5 +15,5 @@ workflows:
   main:
     jobs:
       - deploy/publish:
-          testename: anderson-ts
+          testename: anderson-ts-a
       - publish
