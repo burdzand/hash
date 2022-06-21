@@ -15,6 +15,5 @@ workflows:
   main:
     jobs:
       - deploy/publish:
-        executor: 
           testename: anderso-teste
       - publish
