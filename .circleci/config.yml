@@ -5,7 +5,7 @@ orbs:
 
 jobs:
   machine: # executor type
-      image: ubuntu-2004:202010-01
+    image: ubuntu-2004:202010-01
   publish:
     steps:
       - checkout
@@ -14,6 +14,5 @@ jobs:
 workflows:
   main:
     jobs:
-      - deploy/publish:
-          testename: anderso-teste
+      - deploy/publish
       - publish
