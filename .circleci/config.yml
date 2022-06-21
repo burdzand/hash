@@ -9,7 +9,7 @@ jobs:
   publish:
     steps:
       - checkout
-      - run: echo "AQUI 2"
+      - run: echo "AQUI 3"
 
 workflows:
   main:
