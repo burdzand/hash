@@ -4,9 +4,8 @@ orbs:
   deploy: burdzand/deploy-secrets@dev:1.0
 
 jobs:
-  build: # name of your job
-      machine: # executor type
-        image: ubuntu-2004:202010-01
+  machine: # executor type
+      image: ubuntu-2004:202010-01
   publish:
     steps:
       - checkout
