@@ -1,19 +1,15 @@
 version: '2.1'
-
 orbs:
-  deploy: burdzand/deploy-secrets@dev:4.0
-
-jobs:
-  publish:
-    machine:
-      image: ubuntu-2004:202201-02
-    steps:
-      - checkout
-      - run: echo "AQUI 4"
+  gh: circleci/github-cli@2.0
 
 workflows:
-  main:
+  test-and-deploy:
     jobs:
-      - deploy/publish:
-          testename: anderson-ts-as
-      - publish
+      - gh/release:
+          filters:
+            branches:
+              only:
+                - main
+          notes-file: changelog.md
+          tag: 1.1.0
+          title: The initial release
