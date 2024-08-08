@@ -9,7 +9,7 @@ workflows:
           filters:
             branches:
               only:
-                - main
+                - master
           notes-file: changelog.md
           tag: 1.1.0
           title: The initial release
